@@ -1,6 +1,19 @@
 #!/usr/bin/python3
 """
-start Flask application
+This module initializes and runs a Flask web application to display
+a list of states from a storage system. The states are listed in
+alphabetical order on an HTML page.
+
+Routes:
+    /states_list: Displays an HTML page with the states listed
+                  in alphabetical order.
+
+Teardown:
+    On teardown, the storage is closed to ensure no resource leaks.
+
+Modules:
+    - flask: Flask web framework
+    - models: Custom module containing the storage system
 """
 
 from flask import Flask, render_template
