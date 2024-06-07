@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""
+'''
 This module initializes and runs a Flask web application to display
 a list of states from a storage system. The states are listed in
 alphabetical order on an HTML page.
@@ -14,7 +14,7 @@ Teardown:
 Modules:
     - flask: Flask web framework
     - models: Custom module containing the storage system
-"""
+'''
 
 from flask import Flask, render_template
 from models import *
